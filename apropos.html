@@ -40,13 +40,13 @@
         <li><a href="competence.html">Compétences</a></li>
         <li><a href="blog.html">Blog</a></li>
     </ul>
-</div>
 
-<!-- SOCIALS MOBILE -->
-<div class="mobile-socials">
-    <a href="https://www.instagram.com/bktshims07" target="_blank"><i class='bx bxl-instagram'></i></a>
-    <a href="https://wa.me/243974795742" target="_blank"><i class='bx bxl-whatsapp'></i></a>
-    <a href="https://github.com/blesstk07" target="_blank"><i class='bx bxl-github'></i></a>
+    <!-- SOCIALS MOBILE -->
+    <div class="mobile-socials">
+        <a href="https://www.instagram.com/bktshims07" target="_blank"><i class='bx bxl-instagram'></i></a>
+        <a href="https://wa.me/243974795742" target="_blank"><i class='bx bxl-whatsapp'></i></a>
+        <a href="https://github.com/blesstk07" target="_blank"><i class='bx bxl-github'></i></a>
+    </div>
 </div>
 
 <section class="page">
@@ -70,9 +70,18 @@
 const burger = document.querySelector(".burger");
 const mobileNav = document.querySelector(".mobile-nav");
 
+// toggle menu à chaque clic sur burger
 burger.addEventListener("click", () => {
     burger.classList.toggle("open");
     mobileNav.classList.toggle("open");
+});
+
+// fermer menu si on clique sur un lien
+mobileNav.querySelectorAll("a").forEach(link => {
+    link.addEventListener("click", () => {
+        burger.classList.remove("open");
+        mobileNav.classList.remove("open");
+    });
 });
 </script>
 
