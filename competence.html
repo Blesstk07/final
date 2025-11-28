@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compétences - Bless</title>
+
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- HEADER -->
+<header class="header">
+    <div class="logo"><span>B</span>less<b>.</b></div>
+
+    <ul class="menu">
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="apropos.html">À propos</a></li>
+        <li><a class="active" href="competence.html">Compétences</a></li>
+        <li><a href="blog.html">Blog</a></li>
+    </ul>
+
+    <div class="socials">
+        <a href="https://www.instagram.com/bktshims07" target="_blank"><i class='bx bxl-instagram'></i></a>
+        <a href="tel:+243974795472"><i class='bx bx-phone'></i></a>
+        <a href="https://wa.me/243974795742" target="_blank"><i class='bx bxl-whatsapp'></i></a>
+        <a href="https://www.linkedin.com/in/bless-tshimanga-1a4114343/" target="_blank"><i class='bx bxl-linkedin'></i></a>
+        <a href="https://github.com/blesstk07" target="_blank"><i class='bx bxl-github'></i></a>
+    </div>
+
+    <div class="burger"><span></span></div>
+</header>
+
+<!-- NAV MOBILE -->
+<div class="mobile-nav">
+    <ul>
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="apropos.html">À propos</a></li>
+        <li><a class="active" href="competence.html">Compétences</a></li>
+        <li><a href="blog.html">Blog</a></li>
+    </ul>
+</div>
+
+<!-- SOCIALS MOBILE -->
+<div class="mobile-socials">
+    <a href="https://www.instagram.com/bktshims07" target="_blank"><i class='bx bxl-instagram'></i></a>
+    <a href="https://wa.me/243974795742" target="_blank"><i class='bx bxl-whatsapp'></i></a>
+    <a href="https://github.com/blesstk07" target="_blank"><i class='bx bxl-github'></i></a>
+</div>
+
+<!-- SECTION COMPÉTENCES -->
+<section class="page" style="padding:150px 6% 60px;">
+    <h1 class="page-title">Mes <span class="orange">compétences</span></h1>
+
+    <div class="skills">
+        <div class="skill">
+            <i class='bx bxl-html5'></i>
+            <h3>HTML5</h3>
+            <p>Structure nette, sémantique propre, SEO & responsive.</p>
+        </div>
+        <div class="skill">
+            <i class='bx bxl-css3'></i>
+            <h3>CSS3</h3>
+            <p>Design moderne, animations, dégradés rouge/orange, responsive avancé.</p>
+        </div>
+        <div class="skill">
+            <i class='bx bxl-javascript'></i>
+            <h3>JavaScript</h3>
+            <p>Logique front-end, effets, menus, animations interactives.</p>
+        </div>
+        <div class="skill">
+            <i class='bx bxl-python'></i>
+            <h3>Python</h3>
+            <p>Scripts, automatisation, analyse, logique algorithmique.</p>
+        </div>
+        <div class="skill">
+            <i class='bx bx-chip'></i>
+            <h3>C</h3>
+            <p>Programmation bas niveau, compréhension mémoire et algorithmique.</p>
+        </div>
+        <div class="skill">
+            <i class='bx bxl-java'></i>
+            <h3>Java</h3>
+            <p>POO, logique robuste, structures complexes.</p>
+        </div>
+        <div class="skill">
+            <i class='bx bxl-react'></i>
+            <h3>Dart</h3>
+            <p>Base solide pour Flutter et développement mobile.</p>
+        </div>
+        <div class="skill">
+            <i class='bx bx-data'></i>
+            <h3>SQL</h3>
+            <p>Requêtes, bases de données, gestion MySQL.</p>
+        </div>
+        <div class="skill">
+            <i class='bx bx-code-block'></i>
+            <h3>Développement Web</h3>
+            <p>Création de sites modernes, responsive, animations & UX optimisée.</p>
+        </div>
+        <div class="skill">
+            <i class='bx bxl-php'></i>
+            <h3>PHP</h3>
+            <p>Développement back-end, gestion de formulaires, interactions serveur.</p>
+        </div>
+    </div>
+</section>
+
+<script>
+/* ---------- MENU BURGER ---------- */
+const burger = document.querySelector(".burger");
+const mobileNav = document.querySelector(".mobile-nav");
+
+burger.addEventListener("click", () => {
+    burger.classList.toggle("open");
+    mobileNav.classList.toggle("open");
+});
+</script>
+
+</body>
+</html>

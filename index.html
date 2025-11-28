@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bless - Portfolio</title>
+
+    <!-- Boxicons -->
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="header">
+    <div class="logo"><span>B</span>less<b>.</b></div>
+
+    <ul class="menu">
+        <li><a href="index.html" class="active">Accueil</a></li>
+        <li><a href="apropos.html">À propos</a></li>
+        <li><a href="competence.html">Compétences</a></li>
+        <li><a href="blog.html">Blog</a></li>
+    </ul>
+
+    <div class="socials">
+        <a href="https://www.instagram.com/bktshims07" target="_blank"><i class='bx bxl-instagram'></i></a>
+        <a href="tel:+243974795472"><i class='bx bx-phone'></i></a>
+        <a href="https://wa.me/243974795742" target="_blank"><i class='bx bxl-whatsapp'></i></a>
+        <a href="https://www.linkedin.com/in/bless-tshimanga-1a4114343/" target="_blank"><i class='bx bxl-linkedin'></i></a>
+        <a href="https://github.com/blesstk07" target="_blank"><i class='bx bxl-github'></i></a>
+    </div>
+
+    <div class="burger"><span></span></div>
+</header>
+
+<!-- NAV MOBILE -->
+<div class="mobile-nav">
+    <ul>
+        <li><a href="index.html" class="active">Accueil</a></li>
+        <li><a href="apropos.html">À propos</a></li>
+        <li><a href="competence.html">Compétences</a></li>
+        <li><a href="blog.html">Blog</a></li>
+    </ul>
+</div>
+
+<!-- SOCIALS MOBILE (en dehors du menu burger) -->
+<div class="mobile-socials">
+    <a href="https://www.instagram.com/bktshims07" target="_blank"><i class='bx bxl-instagram'></i></a>
+    <a href="https://wa.me/243974795742" target="_blank"><i class='bx bxl-whatsapp'></i></a>
+    <a href="https://github.com/blesstk07" target="_blank"><i class='bx bxl-github'></i></a>
+</div>
+
+<section class="hero">
+    <div class="left">
+        <h1>Salut — <span class="orange">Je suis</span> <span id="typed" data-text="Bless Tshimanga"></span></h1>
+        <p>Développeur Web & étudiant en Sciences Informatiques à l'UPC.</p>
+    </div>
+
+    <div class="right">
+        <div class="img-wrap">
+            <img src="img/7.jpeg" alt="Bless">
+        </div>
+    </div>
+</section>
+
+<script>
+/* ---------- MENU BURGER ---------- */
+const burger = document.querySelector(".burger");
+const mobileNav = document.querySelector(".mobile-nav");
+
+burger.addEventListener("click", () => {
+    burger.classList.toggle("open");
+    mobileNav.classList.toggle("open");
+});
+
+/* ---------- TYPEWRITER ---------- */
+document.addEventListener("DOMContentLoaded", () => {
+    const typed = document.getElementById("typed");
+    const text = typed.getAttribute("data-text");
+    typed.textContent = "";
+
+    let i = 0;
+    function type() {
+        if (i < text.length) {
+            typed.textContent += text.charAt(i);
+            i++;
+            setTimeout(type, 60);
+        }
+    }
+    type();
+});
+</script>
+
+</body>
+</html>

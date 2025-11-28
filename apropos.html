@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>À propos - Bless</title>
+
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="header">
+    <div class="logo"><span>B</span>less<b>.</b></div>
+
+    <ul class="menu">
+        <li><a href="index.html">Accueil</a></li>
+        <li><a class="active" href="apropos.html">À propos</a></li>
+        <li><a href="competence.html">Compétences</a></li>
+        <li><a href="blog.html">Blog</a></li>
+    </ul>
+
+    <div class="socials">
+        <a href="https://www.instagram.com/bktshims07" target="_blank"><i class='bx bxl-instagram'></i></a>
+        <a href="tel:+243974795472"><i class='bx bx-phone'></i></a>
+        <a href="https://wa.me/243974795742" target="_blank"><i class='bx bxl-whatsapp'></i></a>
+        <a href="https://www.linkedin.com/in/bless-tshimanga-1a4114343/" target="_blank"><i class='bx bxl-linkedin'></i></a>
+        <a href="https://github.com/blesstk07" target="_blank"><i class='bx bxl-github'></i></a>
+    </div>
+
+    <div class="burger"><span></span></div>
+</header>
+
+<!-- NAV MOBILE -->
+<div class="mobile-nav">
+    <ul>
+        <li><a href="index.html">Accueil</a></li>
+        <li><a class="active" href="apropos.html">À propos</a></li>
+        <li><a href="competence.html">Compétences</a></li>
+        <li><a href="blog.html">Blog</a></li>
+    </ul>
+</div>
+
+<!-- SOCIALS MOBILE -->
+<div class="mobile-socials">
+    <a href="https://www.instagram.com/bktshims07" target="_blank"><i class='bx bxl-instagram'></i></a>
+    <a href="https://wa.me/243974795742" target="_blank"><i class='bx bxl-whatsapp'></i></a>
+    <a href="https://github.com/blesstk07" target="_blank"><i class='bx bxl-github'></i></a>
+</div>
+
+<section class="page">
+    <h1 class="page-title">À propos de moi</h1>
+
+    <p class="page-text">
+        Je m’appelle <b>Bless Tshimanga</b>, étudiant en Sciences Informatiques à l’Université Protestante du Congo.
+        Passionné par le développement web, j’aime créer des interfaces modernes,
+        propres et efficaces. Mon objectif est de devenir un développeur complet capable
+        de transformer des idées en projets réels.
+    </p>
+
+    <p class="page-text">
+        Entre études, projets personnels et apprentissage continu, j’avance chaque jour
+        avec détermination en mélangeant créativité, logique et passion.
+    </p>
+</section>
+
+<script>
+/* ---------- MENU BURGER ---------- */
+const burger = document.querySelector(".burger");
+const mobileNav = document.querySelector(".mobile-nav");
+
+burger.addEventListener("click", () => {
+    burger.classList.toggle("open");
+    mobileNav.classList.toggle("open");
+});
+</script>
+
+</body>
+</html>
